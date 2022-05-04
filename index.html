@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="./network/nn.js"></script>
+    <script src="./network/matrix.js"></script>
+    <script src="./sketch.js"></script>
+    <style>
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <button onclick="rs()">Reset</button>
+    <button onclick="switchMode()" id="mode">Mode: Training</button>
+    <input type="text" id="input" placeholder="Import JSON">
+    <button onclick="importJSON()">Import</button>
+    <br class="trainingButtons"><br class="trainingButtons">
+    <button class="trainingButtons" onclick="train(0)">0</button>
+    <button class="trainingButtons" onclick="train(1)">1</button>
+    <button class="trainingButtons" onclick="train(2)">2</button>
+    <button class="trainingButtons" onclick="train(3)">3</button>
+    <button class="trainingButtons" onclick="train(4)">4</button>
+    <button class="trainingButtons" onclick="train(5)">5</button>
+    <button class="trainingButtons" onclick="train(6)">6</button>
+    <button class="trainingButtons" onclick="train(7)">7</button>
+    <button class="trainingButtons" onclick="train(8)">8</button>
+    <button class="trainingButtons" onclick="train(9)">9</button>
+    <br class="trainingButtons"><br>
+    <h3 class= "trainingButtons hidden" id="prediction">Draw something to test!</h3>
+  </body>
+</html>
